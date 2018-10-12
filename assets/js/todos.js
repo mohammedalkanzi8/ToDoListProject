@@ -25,5 +25,12 @@ $("input[type = 'text']").keypress(function(event) {
 		$(this).val("");
 		$("ul").append('<li><span><i class="fas fa-trash"></i></span> ' + todoText + '</li>');
 	};
-	
 });
+// ##################################################
+// Fade the toggle
+// #################################################
+$(".fa-plus").click(function(event) {
+	/* Act on the event */
+	$("input[type = 'text']").fadeToggle();
+});
+
