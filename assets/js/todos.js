@@ -23,7 +23,7 @@ $("input[type = 'text']").keypress(function(event) {
 		/* Act on the event */
 		var todoText = $(this).val();
 		$(this).val("");
-		$("ul").append('<li><span>X</span> ' + todoText + '</li>');
+		$("ul").append('<li><span><i class="fas fa-trash"></i></span> ' + todoText + '</li>');
 	};
 	
 });
